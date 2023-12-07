@@ -1,0 +1,30 @@
+footer{
+    background-color: rgb(53,53,53);
+    color: white;
+
+    padding: 20px;
+    font-weight: 300;
+    h2{
+        font-family: "Shrikhand", cursive;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+    a{
+        color:white;
+    }
+    ul{
+        li{
+            i{
+                width:20px;
+                height: 25px;
+                length: 10px;
+            }
+            span{
+                padding-left: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+    
+}

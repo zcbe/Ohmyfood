@@ -1,0 +1,38 @@
+/*Loader*/
+body {
+    .loader {
+        $animation-duration: 3s;
+        position: fixed;
+        display: grid;
+        place-items: center;
+        background-color: $tertiary-color;
+        height: 100vh;
+        inset: 0PX;
+        z-index: 1;
+        opacity: 0.9em;
+        animation: loader 100ms $animation-duration forwards;
+        transform-origin: top;
+        &::after{
+            content: "";
+            height: 100px;
+            width: 100px;
+            border-top:15px solid $primary-color;
+            border-right: 0px solid $tertiary-color;
+            border-bottom: 15px solid $secondary-color;
+            border-radius: 50%;
+            animation: spin $animation-duration infinite linear;
+                }
+
+            }
+@keyframes loader {
+    to {
+        transform: scale(0);
+        }       
+                    }
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+        }
+                }
+            
+    }
