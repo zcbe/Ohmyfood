@@ -1,0 +1,36 @@
+// header commun
+header{
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    
+    a{
+        font-size: 20px;
+        color: black;
+        // float: left;
+    }
+
+    h1{
+        font-family: 'Shrikhand', cursive;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    img{
+        height: 30px;
+        width: 200px;
+        margin: 0px auto;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+// header home 
+.home-header{
+    display: flex;
+    justify-content: center;
+    img {
+        height: 30px;
+        cursor: pointer;
+    }
+}
