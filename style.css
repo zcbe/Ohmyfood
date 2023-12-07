@@ -150,7 +150,7 @@ main .reservation {
   padding-bottom: 50px;
   flex-basis: 100%;
 }
-main .reservation h2 {
+main .reservation h1 {
   font-size: 25px;
   flex-basis: 100%;
   font-weight: 800;
