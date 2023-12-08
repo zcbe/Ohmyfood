@@ -36,3 +36,30 @@ body {
                 }
             
     }
+
+.like{
+
+    i{
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .my-heart-full{
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 500ms;
+       
+    }
+    .my-heart-full:hover {
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient($primary-color,$secondary-color);
+        background-clip: text;
+        -webkit-background-clip:text;
+    }
+
+}
+   
