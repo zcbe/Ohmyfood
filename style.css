@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding: 25px 10px;
+  padding: 15px 10px;
   display: flex;
   align-items: center;
 }
@@ -26,8 +26,8 @@ header h1 {
   font-size: 30px;
 }
 header img {
-  height: 30px;
-  width: 200px;
+  height: 40px;
+  width: 170px;
   margin: 0px auto;
   display: block;
   cursor: pointer;
