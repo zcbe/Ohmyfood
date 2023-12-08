@@ -6,6 +6,7 @@ button{
     color: white;
     border: none;
     font-weight: 500;
+    width: 218px;
     cursor: pointer;
     &:hover,
     &:active{
@@ -13,3 +14,10 @@ button{
         @include box-shadow;
          }
     }
+
+    @media screen and (max-width: 240px) {
+        button{
+            width: 150px;
+        }
+    }
+    
