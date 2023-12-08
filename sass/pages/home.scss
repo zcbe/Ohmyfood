@@ -8,7 +8,6 @@ main {
         justify-content: center;
         padding: 15px;
         border-top: 1px lightgrey solid;
-        box-shadow: inset -2px 2px 6px rgba(54, 54, 54, 0.2);
 
         input {
             border: none;
@@ -127,7 +126,7 @@ main {
             flex-wrap: wrap;
             background-color: $primary-bg;
             row-gap: 15px;
-            padding-bottom: 80px;
+            padding-bottom: 30px;
             max-width: 1200px;
             margin: 0 auto;
             h2 {
@@ -244,10 +243,14 @@ main {
             
             h2, ul{
             display: flex;
-            flex-wrap: row;
-            align-items: center;
-            justify-content: space-around;
+            justify-content: flex-end;    
+            flex-direction: row;  
+            flex-wrap: nowrap;
+            li,a{
+                padding-left: 15px;
+                flex-wrap: nowrap;
             }
+        }
 }
 }
 

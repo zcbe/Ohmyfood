@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding: 15px 10px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
 }
@@ -36,6 +36,7 @@ header img {
 .home-header {
   display: flex;
   justify-content: center;
+  height: 20px;
 }
 .home-header img {
   height: 30px;
@@ -45,6 +46,7 @@ header img {
 footer {
   background-color: rgb(53, 53, 53);
   color: white;
+  margin-top: 40px;
   padding: 20px;
   font-weight: 300;
 }
@@ -175,6 +177,7 @@ main .fonctionnement {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 30PX;
 }
 main .fonctionnement h2 {
   flex-basis: 100%;
@@ -247,15 +250,15 @@ main .restaurant-list .restaurant-list__section {
   flex-wrap: wrap;
   background-color: rgb(246, 246, 246);
   row-gap: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 main .restaurant-list .restaurant-list__section h2 {
   flex-basis: 100%;
   font-weight: 600;
-  font-size: 20px;
-  padding: 50px 0px 20px 10px;
+  font-size: 24px;
+  padding: 60px 0px 0px 20px;
 }
 main .restaurant-list .restaurant-list__section a {
   background-color: white;
@@ -267,11 +270,11 @@ main .restaurant-list .restaurant-list__section a {
   position: relative;
 }
 main .restaurant-list .restaurant-list__section a figure {
-  height: 210px;
+  height: 180px;
 }
 main .restaurant-list .restaurant-list__section a figure img {
   width: 100%;
-  height: 210px;
+  height: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   object-fit: cover;
@@ -345,9 +348,13 @@ main .restaurant-list .restaurant-list__section a div .my-heart-full:hover {
   }
   footer h2, footer ul {
     display: flex;
-    flex-wrap: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer h2 li, footer h2 a, footer ul li, footer ul a {
+    padding-left: 15px;
+    flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 560px) {
