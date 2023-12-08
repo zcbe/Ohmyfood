@@ -237,20 +237,6 @@ main {
                 }
             }
         }
-        
-        }
-        footer{
-            
-            h2, ul{
-            display: flex;
-            justify-content: flex-end;    
-            flex-direction: row;  
-            flex-wrap: nowrap;
-            li,a{
-                padding-left: 15px;
-                flex-wrap: nowrap;
-            }
-        }
         }
 }
 
