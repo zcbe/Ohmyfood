@@ -666,6 +666,9 @@ body .restaurant-menu .menu-list button {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 50px;
+  width: 186px;
+  height: 50Px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
