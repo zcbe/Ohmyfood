@@ -83,6 +83,7 @@ main {
                     align-items: center;
                     display: flex;
                     height: 100%;
+                    color: black;
                     i {
                         padding: 30px;
                         color: grey;
@@ -128,7 +129,7 @@ main {
             flex-wrap: wrap;
             background-color: $primary-bg;
             row-gap: 15px;
-            padding-bottom: 60px;
+            padding-bottom: 75px;
             max-width: 1200px;
             margin: 0 auto;
             h2 {
@@ -199,9 +200,28 @@ main {
 // Responsive 
 @media screen and (min-width: 850px) {
     main {
-        .fonctionnement {
+
+        .reservation{
+            h1{
+                font-size: 40px;
+                padding-top: 10px;
+            }
+            p{
+                font-size: 18PX;
+                padding-top: 10px;
+            }
+            button{
+                margin-top: 10px;
+                font-size: 16px;
+            }
+        }
+        .fonctionnement{
             display: flex;
             flex-basis: 100%;
+            h2{
+                margin-top: 16px;
+                padding-left: 60px;
+            }
             ol{
                 display: flex;
                 flex-wrap: nowrap;
@@ -216,13 +236,25 @@ main {
                     a{
                         justify-content: center;
                     }
-                }
-            }
+       
+        
         }
         }
 }
+        .restaurant-list .restaurant-list__section{
+            padding-bottom: 15px;
+            h2{
+                padding: 15px 0px 0px 60px;
+            }
+            a{
+                max-width: 40%;
+                margin-top: 15PX;
+                margin-bottom: 20PX;
+            }
+        }
 
-
+}
+}
 @media screen and (min-width: 560px) {
     main {
         .reservation {
