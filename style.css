@@ -12,9 +12,13 @@ body {
 }
 
 header {
-  padding: 20px 10px;
+  padding: 20px 10px 20px 10px;
   display: flex;
   align-items: center;
+}
+header i {
+  padding-left: 13PX;
+  align-items: flex-start;
 }
 header a {
   font-size: 20px;
@@ -26,8 +30,9 @@ header h1 {
   font-size: 30px;
 }
 header img {
-  height: 40px;
+  height: 30px;
   width: 170px;
+  padding-right: 10px;
   margin: 0px auto;
   display: block;
   cursor: pointer;
@@ -69,6 +74,18 @@ footer ul li span {
   font-weight: 400;
 }
 
+@media screen and (min-width: 850px) {
+  footer h2, footer ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer h2 li, footer h2 a, footer ul li, footer ul a {
+    padding-left: 15px;
+    flex-wrap: nowrap;
+  }
+}
 /*Loader*/
 body .loader {
   position: fixed;
@@ -103,6 +120,71 @@ body .loader::after {
   }
 }
 
+.like i {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.like .my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.like .my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animationChoiceMenu {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 button {
   padding: 15px;
   border-radius: 25px;
@@ -135,7 +217,6 @@ main form {
   justify-content: center;
   padding: 15px;
   border-top: 1px lightgrey solid;
-  box-shadow: inset -2px 2px 6px rgba(54, 54, 54, 0.2);
 }
 main form input {
   border: none;
@@ -381,6 +462,210 @@ main .restaurant-list .restaurant-list__section a div .my-heart-full:hover {
     object-fit: cover;
     height: 180px;
   }
+}
+body .container {
+  max-width: 1440px;
+}
+body .restaurant-menu {
+  display: flex;
+}
+body .restaurant-menu figure {
+  flex-basis: 100%;
+  height: 275px;
+}
+body .restaurant-menu figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+body .restaurant-menu .menu-list {
+  min-width: 0px;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 20px 0px 0px 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f4f4f4;
+  z-index: 1;
+  margin-top: -60px;
+  justify-content: center;
+}
+body .restaurant-menu .menu-list > h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 10px 20px 30px 20px;
+}
+body .restaurant-menu .menu-list > h1 .like {
+  position: relative;
+  top: 13px;
+  left: 10px;
+}
+body .restaurant-menu .menu-list .menu-list__entries,
+body .restaurant-menu .menu-list .menu-list__dishes,
+body .restaurant-menu .menu-list .menu-list__dessert {
+  margin: 0px 15px 50px 15px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(1),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(1),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(2),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(2),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(3),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(3),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(3) {
+  animation-delay: 1.3s;
+}
+body .restaurant-menu .menu-list .menu-list__entries h2,
+body .restaurant-menu .menu-list .menu-list__dishes h2,
+body .restaurant-menu .menu-list .menu-list__dessert h2 {
+  font-weight: 300;
+  font-size: 16px;
+  width: 100%;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+body .restaurant-menu .menu-list .menu-list__entries h2 .menu-list--underline,
+body .restaurant-menu .menu-list .menu-list__dishes h2 .menu-list--underline,
+body .restaurant-menu .menu-list .menu-list__dessert h2 .menu-list--underline {
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 1px;
+}
+body .restaurant-menu .menu-list .menu-list__entries article,
+body .restaurant-menu .menu-list .menu-list__dishes article,
+body .restaurant-menu .menu-list .menu-list__dessert article {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail {
+  display: flex;
+  flex-basis: 90%;
+  transition-duration: 1s;
+  min-width: 0px;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description {
+  flex-basis: 90%;
+  padding: 10px 0px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 21px;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__description h3,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description h3,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__description p,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description p,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__price {
+  flex-basis: 10%;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  position: relative;
+  right: -10%;
+  transition-duration: 1s;
+  font-weight: 500;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list--choice {
+  background-color: #99E2D0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -15%;
+  transition-duration: 1s;
+  width: 10%;
+}
+body .restaurant-menu .menu-list .menu-list__entries article .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list--choice i {
+  font-size: 25px;
+  color: white;
+}
+body .restaurant-menu .menu-list .menu-list__entries article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__entries article:active .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail {
+  flex-basis: 85%;
+}
+body .restaurant-menu .menu-list .menu-list__entries article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__entries article:active .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail .menu-list__description {
+  flex-basis: 90%;
+}
+body .restaurant-menu .menu-list .menu-list__entries article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__entries article:active .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail .menu-list__price {
+  flex-basis: 10%;
+  right: 0%;
+}
+body .restaurant-menu .menu-list .menu-list__entries article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__entries article:active .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list--choice {
+  width: 15%;
+  right: 0%;
+  min-width: 35px;
+}
+body .restaurant-menu .menu-list .menu-list__entries article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__entries article:active .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list--choice i {
+  font-size: 25px;
+  animation: animationChoiceMenu 1s;
+}
+body .restaurant-menu .menu-list button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
