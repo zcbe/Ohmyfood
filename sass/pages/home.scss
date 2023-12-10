@@ -225,7 +225,7 @@ main {
             ol{
                 display: flex;
                 flex-wrap: nowrap;
-                flex-basis: 100%;
+                flex-basis: 90%;
                 justify-content: space-between;
                 li{
                     border-radius: 15px;
@@ -234,7 +234,7 @@ main {
                     flex-basis: 30%;
                     @include box-shadow;
                     a{
-                        justify-content: center;
+                        justify-content: left;
                     }
        
         
