@@ -19,8 +19,9 @@ header{
     }
 
     img{
-        height: 40px;
+        height: 30px;
         width: 170px;
+        padding-right: 10px;
         margin: 0px auto;
         display: block;
         cursor: pointer;
@@ -37,3 +38,18 @@ header{
         cursor: pointer;
     }
 }
+
+
+
+// Responsive 
+@media screen and (min-width: 850px) {
+    .home-header{
+        height: 50px;
+        img{
+            width: 200px;
+        }
+    }
+
+   
+}
+
