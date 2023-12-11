@@ -33,6 +33,7 @@ header{
     display: flex;
     justify-content: center;
     height: 20px;
+    
     img {
         height: 30px;
         cursor: pointer;
@@ -41,15 +42,30 @@ header{
 
 
 
+
 // Responsive 
 @media screen and (min-width: 850px) {
+    header{
+        padding: 42px 10px 20px 10PX;
+        i{
+            padding-bottom: 10PX;
+        }
+        img{
+            height: 40PX;
+            padding-right: 0PX;
+        }
+
+        }
+
+    
     .home-header{
         height: 50px;
         img{
             width: 200px;
+            height: 35PX;
         }
     }
 
    
 }
-
+   
