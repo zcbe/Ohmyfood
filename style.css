@@ -49,8 +49,22 @@ header img {
 }
 
 @media screen and (min-width: 850px) {
+  header {
+    padding: 42px 10px 20px 10PX;
+  }
+  header i {
+    padding-bottom: 10PX;
+  }
+  header img {
+    height: 40PX;
+    padding-right: 0PX;
+  }
   .home-header {
     height: 50px;
+  }
+  .home-header img {
+    width: 200px;
+    height: 35PX;
   }
 }
 footer {
@@ -80,15 +94,25 @@ footer ul li span {
 }
 
 @media screen and (min-width: 850px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: 114px;
+  }
   footer h2, footer ul {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    width: 20%;
+    margin-left: 35%;
+    font-size: 17px;
+    height: 50px;
+    padding-top: 25PX;
+    margin-bottom: 0px;
   }
   footer h2 li, footer h2 a, footer ul li, footer ul a {
     padding-left: 15px;
-    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 }
 /*Loader*/
@@ -223,17 +247,20 @@ main form {
   padding: 15px;
   border-top: 1px lightgrey solid;
 }
+main form label {
+  padding-left: 18px;
+}
 main form input {
   border: none;
   background-color: rgb(234, 234, 234);
   justify-content: center;
-  padding-left: 10px;
+  padding-top: 5px;
   max-width: 200px;
 }
 main form input::placeholder {
   color: black;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 main .reservation {
@@ -294,6 +321,7 @@ main .fonctionnement ol li a {
   align-items: center;
   display: flex;
   height: 100%;
+  color: black;
 }
 main .fonctionnement ol li a i {
   padding: 30px;
@@ -336,7 +364,7 @@ main .restaurant-list .restaurant-list__section {
   flex-wrap: wrap;
   background-color: rgb(246, 246, 246);
   row-gap: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -391,30 +419,43 @@ main .restaurant-list .restaurant-list__section a div span {
   font-weight: 500;
   border-radius: 3px;
 }
-main .restaurant-list .restaurant-list__section a div i {
-  position: absolute;
-  bottom: 25px;
-  right: 30px;
-  font-size: 25px;
-  cursor: pointer;
-}
-main .restaurant-list .restaurant-list__section a div .my-heart-full {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 500ms;
-}
-main .restaurant-list .restaurant-list__section a div .my-heart-full:hover {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
+
+@media screen and (min-width: 850px) {
+  main form {
+    height: 20px;
+  }
+  main form label {
+    padding-left: 20PX;
+    padding-top: 5PX;
+  }
+  main form input {
+    padding-left: 0px;
+    padding-top: 10PX;
+  }
+  main .reservation {
+    padding-top: 22px;
+  }
+  main .reservation h1 {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  main .reservation p {
+    font-size: 18PX;
+    padding-top: 10px;
+  }
+  main .reservation button {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 
 @media screen and (min-width: 850px) {
   main .fonctionnement {
     display: flex;
     flex-basis: 100%;
+  }
+  main .fonctionnement h2 {
+    margin-top: 16px;
+    padding-left: 60px;
   }
   main .fonctionnement ol {
     display: flex;
