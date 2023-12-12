@@ -15,6 +15,7 @@ header {
   padding: 20px 10px 20px 10px;
   display: flex;
   align-items: center;
+  height: 65PX;
 }
 header i {
   padding-left: 13PX;
@@ -39,6 +40,7 @@ header img {
 }
 
 .home-header {
+  padding: 20px 10px 20px 10px;
   display: flex;
   justify-content: center;
   height: 20px;
@@ -50,7 +52,7 @@ header img {
 
 @media screen and (min-width: 850px) {
   header {
-    padding: 42px 10px 20px 10PX;
+    padding: 20px 10px 20px 10PX;
   }
   header i {
     padding-bottom: 10PX;
@@ -65,6 +67,17 @@ header img {
   .home-header img {
     width: 200px;
     height: 35PX;
+  }
+  .menu-header {
+    padding: 20px 10px 0px 10PX;
+  }
+  .menu-header i {
+    padding-bottom: 20px;
+  }
+  .menu-header img {
+    width: 200PX;
+    padding-right: 22px;
+    padding-bottom: 42PX;
   }
 }
 footer {
