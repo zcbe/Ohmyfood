@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  padding: 20px 10px 20px 10px;
   display: flex;
   align-items: center;
   height: 65PX;
@@ -83,7 +82,6 @@ header img {
 footer {
   background-color: rgb(53, 53, 53);
   color: white;
-  margin-top: 40px;
   padding: 20px;
   font-weight: 300;
 }
@@ -99,7 +97,6 @@ footer a {
 footer ul li i {
   width: 20px;
   height: 25px;
-  length: 10px;
 }
 footer ul li span {
   padding-left: 10px;
@@ -143,7 +140,6 @@ body .loader {
   height: 100vh;
   inset: 0PX;
   z-index: 1;
-  opacity: 0.9em;
   animation: loader 100ms 3s forwards;
   transform-origin: top;
 }
@@ -377,11 +373,11 @@ body main .fonctionnement ol li i {
   color: grey;
   text-align: center;
 }
-main .restaurant-list {
+body main .restaurant-list {
   flex-basis: 100%;
   background-color: rgb(246, 246, 246);
 }
-main .restaurant-list .restaurant-list__section {
+body main .restaurant-list .restaurant-list__section {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(246, 246, 246);
@@ -415,12 +411,12 @@ body main .restaurant-list .restaurant-list__section a figure img {
   border-top-left-radius: 20px;
   object-fit: cover;
 }
-main .restaurant-list .restaurant-list__section a div {
+body main .restaurant-list .restaurant-list__section a div {
   display: flex;
   flex-wrap: wrap;
   color: gray;
 }
-main .restaurant-list .restaurant-list__section a div h3 {
+body main .restaurant-list .restaurant-list__section a div h3 {
   flex-basis: 100%;
   font-weight: 600;
   padding: 10px 0px 5px 10px;
@@ -469,8 +465,6 @@ body main .restaurant-list .restaurant-list__section a div span {
     margin-top: 10px;
     font-size: 16px;
   }
-
-@media screen and (min-width: 850px) {
   main .fonctionnement {
     display: flex;
     flex-basis: 100%;
@@ -487,7 +481,6 @@ body main .restaurant-list .restaurant-list__section a div span {
   }
   main .fonctionnement ol li {
     border-radius: 15px;
-    margin: auto;
     text-align: center;
     flex-basis: 30%;
     box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);

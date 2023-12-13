@@ -9,7 +9,6 @@ body {
         height: 100vh;
         inset: 0PX;
         z-index: 1;
-        opacity: 0.9em;
         animation: loader 100ms $animation-duration forwards;
         transform-origin: top;
         &::after{
@@ -41,10 +40,12 @@ body {
 
     i{
         position: absolute;
-        bottom: 25px;
-        right: 30px;
+        bottom: 30px;
+        right: 25px;
         font-size: 25px;
         cursor: pointer;
+  
+        
     }
 
     .my-heart-full{

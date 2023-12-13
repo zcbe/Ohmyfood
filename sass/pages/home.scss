@@ -1,3 +1,8 @@
+body {
+    .container {
+        max-width: 1440px;
+    }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +195,7 @@ main {
         }
     }
 }
-
+}
 
 
 
@@ -243,7 +248,6 @@ main {
                 justify-content: space-between;
                 li{
                     border-radius: 15px;
-                    margin:auto;
                     text-align: center;
                     flex-basis: 30%;
                     @include box-shadow;
