@@ -140,8 +140,7 @@ body .loader {
   height: 100vh;
   inset: 0PX;
   z-index: 1;
-  animation: loader 100ms 3s forwards;
-  transform-origin: top;
+  animation: loader 350ms 3s forwards;
 }
 body .loader::after {
   content: "";
@@ -346,12 +345,6 @@ body main .fonctionnement ol li a i {
   color: grey;
   font-size: 1.1em;
   width: 15px;
-}
-body main .fonctionnement ol li:hover {
-  background-color: #f5edff;
-}
-body main .fonctionnement ol li:hover i {
-  color: #9356DC;
 }
 body main .fonctionnement ol li .chiffre {
   position: absolute;

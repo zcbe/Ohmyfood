@@ -9,8 +9,8 @@ body {
         height: 100vh;
         inset: 0PX;
         z-index: 1;
-        animation: loader 100ms $animation-duration forwards;
-        transform-origin: top;
+        animation: loader 350ms  $animation-duration forwards;
+       
         &::after{
             content: "";
             height: 100px;
