@@ -1,6 +1,6 @@
 body {
     .container {
-        max-width: 1440px;
+        min-width: 300px;
     }
 
 main {
@@ -14,24 +14,27 @@ main {
         padding: 15px;
         border-top: 1px lightgrey solid;
         label{
-            padding-left: 18px;
+            padding-left: 94px;
+            position: relative;
+            right: 15PX;
         }
         input {
             border: none;
             background-color: rgba(234, 234, 234, 255);
-            justify-content: center;
-            padding-top: 5px;
-            max-width: 200px;
+            justify-content: start;
+            padding-bottom: 3px;
+            padding-right: 10PX;
             &::placeholder {
                 color: black;
                 font-size: 16px;
                 font-weight: 500;
-                text-align: center;
+                text-align: start;
             }
         }
     }
 
     .reservation {
+        width: 100%;
         background-color: $primary-bg;
         display: flex;
         flex-wrap: wrap;
@@ -43,28 +46,30 @@ main {
             flex-basis: 100%;
             font-weight: 800;
             text-align: center;
-            padding: 15px 40px;
+            padding: 5px 40px;
         }
         p {
             font-size: 17px;
             flex-basis: 100%;
             text-align: center;
-            padding: 0px 20px 20px 20px;
+            padding: 5px 21px 30px 20px;
             font-weight: 300;
         }
     }
 
     .fonctionnement {
         display: flex;
+        justify-content: center;
+        flex-basis: 100%;
         flex-wrap: wrap;
-        max-width: 1200px;
+        max-width: 350px;
         margin: 0 auto;
         padding-bottom: 30px;
         h2 {
             flex-basis: 100%;
             font-weight: 600;
             font-size: 24px;
-            padding: 20px 0px 10px 20px;
+            padding: 13px 0px 10px 8px;
             margin-top:45px;
             margin-bottom: 15px;
         }
@@ -84,6 +89,7 @@ main {
                 position: relative;
                 a {
                     flex-basis: 100%;
+                    justify-content: left;
                     align-items: center;
                     display: flex;
                     height: 100%;
@@ -94,6 +100,8 @@ main {
                         color: grey;
                         font-size: 1.1em;
                         width: 15px;
+                        margin-left: -14px;
+
                      }
                      .fa-store {
                         color: $primary-color;
@@ -103,7 +111,7 @@ main {
                 .chiffre{
                    
                     position: absolute;
-                    left: -10px;
+                    left: -26px;
                     bottom: 30px;
                     font-weight: 400;
                     font-size: 0.9em;
@@ -125,24 +133,30 @@ main {
         }
     } 
     .restaurant-list {
+        display: flex;
         flex-basis: 100%;
         background-color: $primary-bg;
+        padding-bottom: 54px;
         .restaurant-list__section {
             display: flex;
+            flex-direction: row;
+            flex-basis: 100%;
             flex-wrap: wrap;
             background-color: $primary-bg;
-            row-gap: 15px;
-            padding-bottom: 75px;
-            max-width: 1200px;
+            row-gap: 18px;
+            padding-bottom: 15px;
             margin: 0 auto;
             h2 {
                 flex-basis: 100%;
                 font-weight: 600;
                 font-size: 24px;
-                padding: 60px 0px 0px 20px;
+                padding: 60px 0px 0px 15px;
               
             }
             a {
+                max-width: 90%;
+                margin-top: 15px;
+                margin-bottom: 20px;
                 background-color: white;
                 border: 10px none solid;
                 border-radius: 20px;
@@ -152,7 +166,7 @@ main {
                 position: relative;
 
                 figure {
-                    height: 180px;
+                    height: 178px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -195,37 +209,73 @@ main {
 }
 }
 
-
-
-
-
-
 // Responsive 
-@media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 768px) {
+    body{  
+      
     main {
-        form{
-            height: 20px;
-            label{
-                padding-left: 20px;
-                padding-top: 5px;
-
+       
+        .fonctionnement{
+            display: flex;
+            flex-basis: 100%;
+            padding-bottom: 42px;
+            max-width: 1920px;
+            h2{
+			margin-top: 40px;
+                padding-left: 180px;
             }
-            input{
-                padding-left: 0px;
-                padding-top: 10px;
+            ol{
+                display: flex;
 
+                li{
+                    border-radius: 15px;
+                    flex-basis: 65%;
+                    @include box-shadow;
+                    a{
+                        justify-content: left;
+                        i{
+                            margin-left: 0px;
+                        }
+                    }
+            .chiffre{
+                left:-15px;
+            }
+       
+        
+        }
+        }
+        }
+        .restaurant-list .restaurant-list__section{
+            padding-bottom: 15px;
+            h2{
+                padding: 5px 0px 0px 20px;
+            }
+            a{
+                max-width: 45%;
             }
         }
+    }
+    
+}
+}
 
+@media screen and (min-width: 1024px) {
+    body{
+            
+        main {
+        
         .reservation{
-            padding-top: 22px;
+            padding-top: 23px;
+            padding-bottom: 28px;
             h1{
                 font-size: 40px;
-                padding-top: 10px;
+                padding-top: 6px;
+                padding-left: 46px;
             }
             p{
                 font-size: 18PX;
-                padding-top: 10px;
+                padding-top: 23px;
             }
             button{
                 margin-top: 10px;
@@ -235,42 +285,45 @@ main {
         .fonctionnement{
             display: flex;
             flex-basis: 100%;
+            padding-bottom: 42px;
+            max-width: 1920px;
             h2{
-                margin-top: 16px;
-                padding-left: 60px;
+                margin-top: 40px;
+                padding-left: 180px;
             }
             ol{
                 display: flex;
                 flex-wrap: nowrap;
-                flex-basis: 90%;
-                justify-content: space-between;
+                flex-basis: 80%;
                 li{
                     border-radius: 15px;
-                    text-align: center;
-                    flex-basis: 30%;
+                    flex-basis: 32%;
                     @include box-shadow;
                     a{
                         justify-content: left;
+                        i{
+                            margin-left: 0px;
+                        }
                     }
-       
-        
         }
         }
-}
+        }
+        .restaurant-list{
+            padding-bottom: 0px;
+        }
         .restaurant-list .restaurant-list__section{
             padding-bottom: 15px;
             h2{
-                padding: 15px 0px 0px 60px;
+                padding: 5px 0px 0px 180px;
             }
             a{
-                max-width: 40%;
-                margin-top: 15px;
-                margin-bottom: 20px;
+                max-width: 34%;
+                margin: 1% -6% 1% 13%;
             }
         }
 
-}
-}
+        }
+        }
 @media screen and (min-width: 768px) {
     main {
         .reservation {
@@ -296,7 +349,5 @@ main {
                 }
             }
         }
-    }
-
-    
-}
+        }
+        }
