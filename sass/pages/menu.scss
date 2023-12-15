@@ -114,7 +114,7 @@ body {
                             font-weight: 500;
                         }
                     }
-                    .menu-list--choice {
+                    .menu-list--choice{
                         background-color: $tertiary-color;
                         align-items: center;
                         display: flex;
@@ -165,7 +165,7 @@ body {
 }
 
 // Responsive
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
     body{
         .restaurant-menu figure img{
             height: 375px;

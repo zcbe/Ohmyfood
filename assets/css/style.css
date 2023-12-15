@@ -14,10 +14,10 @@ body {
 header {
   display: flex;
   align-items: center;
-  height: 65PX;
+  height: 65px;
 }
 header i {
-  padding-left: 13PX;
+  padding-left: 13px;
   align-items: flex-start;
 }
 header a {
@@ -49,34 +49,34 @@ header img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   header {
     padding: 20px 10px 20px 10PX;
   }
   header i {
-    padding-bottom: 10PX;
+    padding-bottom: 10px;
   }
   header img {
-    height: 40PX;
-    padding-right: 0PX;
+    height: 40px;
+    padding-right: 0px;
   }
   .home-header {
     height: 50px;
   }
   .home-header img {
     width: 200px;
-    height: 35PX;
+    height: 35px;
   }
   .menu-header {
-    padding: 20px 10px 0px 10PX;
+    padding: 20px 10px 0px 10px;
   }
   .menu-header i {
     padding-bottom: 20px;
   }
   .menu-header img {
-    width: 200PX;
+    width: 200px;
     padding-right: 22px;
-    padding-bottom: 42PX;
+    padding-bottom: 42px;
   }
 }
 footer {
@@ -94,6 +94,9 @@ footer h2 {
 footer a {
   color: white;
 }
+footer ul li a {
+  cursor: default;
+}
 footer ul li i {
   width: 20px;
   height: 25px;
@@ -103,7 +106,7 @@ footer ul li span {
   font-weight: 400;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -132,17 +135,19 @@ footer ul li span {
   }
 }
 /*Loader*/
-body .loader {
+body .homepage .loader {
   position: fixed;
   display: grid;
   place-items: center;
   background-color: #99E2D0;
   height: 100vh;
-  inset: 0PX;
+  inset: 0px;
   z-index: 1;
+  align-items: center;
   animation: loader 350ms 3s forwards;
+  transform-origin: top;
 }
-body .loader::after {
+body .homepage .loader::after {
   content: "";
   height: 100px;
   width: 100px;
@@ -151,6 +156,13 @@ body .loader::after {
   border-bottom: 15px solid #FF79DA;
   border-radius: 50%;
   animation: spin 3s infinite linear;
+}
+body .homepage .loader .loader-txt {
+  color: white;
+  font-size: xx-large;
+  align-items: flex-start;
+  z-index: 2;
+  position: absolute;
 }
 @keyframes loader {
   to {
@@ -218,14 +230,6 @@ body .loader::after {
   100% {
     transform: translateY(0px);
     opacity: 1;
-  }
-}
-@keyframes animationChoiceMenu {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 button {
@@ -307,7 +311,7 @@ body main .fonctionnement {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 30PX;
+  padding-bottom: 30px;
 }
 body main .fonctionnement h2 {
   flex-basis: 100%;
@@ -327,7 +331,6 @@ body main .fonctionnement ol li {
   flex-basis: 80%;
   border-radius: 15px;
   box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
-  background-color: rgb(246, 246, 246);
   margin: auto;
   text-align: center;
   font-weight: 500;
@@ -339,6 +342,7 @@ body main .fonctionnement ol li a {
   display: flex;
   height: 100%;
   color: black;
+  cursor: auto;
 }
 body main .fonctionnement ol li a i {
   padding: 30px;
@@ -434,17 +438,17 @@ body main .restaurant-list .restaurant-list__section a div span {
   border-radius: 3px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   main form {
     height: 20px;
   }
   main form label {
-    padding-left: 20PX;
-    padding-top: 5PX;
+    padding-left: 20px;
+    padding-top: 5px;
   }
   main form input {
     padding-left: 0px;
-    padding-top: 10PX;
+    padding-top: 10px;
   }
   main .reservation {
     padding-top: 22px;
@@ -492,11 +496,11 @@ body main .restaurant-list .restaurant-list__section a div span {
   }
   main .restaurant-list .restaurant-list__section a {
     max-width: 40%;
-    margin-top: 15PX;
-    margin-bottom: 20PX;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 768px) {
   main .reservation {
     width: 100%;
   }
@@ -720,7 +724,7 @@ body .restaurant-menu .menu-list button {
   font-size: 16px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   body .restaurant-menu figure img {
     height: 375px;
   }
@@ -741,13 +745,13 @@ body .restaurant-menu .menu-list button {
   body .restaurant-menu .menu-list .menu-list__dessert {
     width: 60%;
     padding-left: 20%;
-    padding-top: 20PX;
+    padding-top: 20px;
   }
   body .restaurant-menu .menu-list .menu-list__dishes {
-    padding-top: 6PX;
+    padding-top: 6px;
   }
   body .restaurant-menu .menu-list .menu-list__dessert {
-    padding-top: 5PX;
+    padding-top: 5px;
   }
 }
 
