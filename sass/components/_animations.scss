@@ -7,7 +7,7 @@ body {
         place-items: center;
         background-color: $tertiary-color;
         height: 100vh;
-        inset: 0PX;
+        inset: 0px;
         z-index: 1;
         animation: loader 350ms  $animation-duration forwards;
        
@@ -103,12 +103,5 @@ body {
     }
 }
 
-@keyframes animationChoiceMenu {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 
