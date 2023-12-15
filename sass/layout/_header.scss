@@ -3,12 +3,7 @@ header{
     display: flex;
     align-items: center;
     height: 65px;
-    i{
-        padding-left: 13px;
-        align-items: flex-start;
-    }
     a{
-        font-size: 20px;
         color: black;
     }
     i{
@@ -49,21 +44,8 @@ header{
 
 
 
-
 // Responsive 
 @media screen and (min-width: 1024px) {
-    header{
-        padding: 20px 10px 20px 10PX;
-        i{
-            padding-bottom: 10px;
-        }
-        img{
-            height: 40px;
-        padding-right: 0px;
-    }
-
-        }
-
     
     .home-header{
         height: 50px;
@@ -73,7 +55,6 @@ header{
             height: 35px;
         }
     }
-
      
     .menu-header{
         padding: 30px 10px 0px 10px;
@@ -89,5 +70,4 @@ header{
     }
 
 }
-
 
