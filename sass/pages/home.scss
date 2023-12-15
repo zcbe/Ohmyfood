@@ -26,7 +26,7 @@ body {
                 background-color: rgba(234, 234, 234, 255);
                 justify-content: start;
                 padding-bottom: 3px;
-                padding-right: 10PX;
+                padding-right: 10px;
 
                 &::placeholder {
                     color: black;
@@ -264,7 +264,7 @@ body {
                         }
 
                         .chiffre {
-                            left: -15px;
+                            left: -8px;
                         }
 
 
@@ -304,7 +304,7 @@ body {
                 }
 
                 p {
-                    font-size: 18PX;
+                    font-size: 18px;
                     padding-top: 23px;
                 }
 
@@ -315,13 +315,13 @@ body {
 
             .fonctionnement {
                 display: flex;
-                flex-basis: 100%;
+                flex-basis: 93%;
                 padding-bottom: 42px;
                 max-width: 1920px;
 
                 h2 {
                     margin-top: 40px;
-                    padding-left: 180px;
+                    padding-left: 130px;
                 }
 
                 ol {

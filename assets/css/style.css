@@ -111,12 +111,13 @@ footer ul li span {
   footer h2,
   footer ul {
     display: flex;
-    padding-left: 5%;
+    padding-left: 44%;
     font-size: 17px;
     height: 50px;
     padding-top: 2%;
     margin-bottom: 0px;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    width: 10px;
   }
   footer h2 h2,
   footer ul h2 {
@@ -130,7 +131,7 @@ footer ul li span {
   footer h2 a,
   footer ul li,
   footer ul a {
-    padding-left: 15px;
+    padding-left: 7px;
     white-space: nowrap;
   }
 }
@@ -265,14 +266,14 @@ body main form {
 body main form label {
   padding-left: 94px;
   position: relative;
-  right: 15PX;
+  right: 15px;
 }
 body main form input {
   border: none;
   background-color: rgb(234, 234, 234);
   justify-content: start;
   padding-bottom: 3px;
-  padding-right: 10PX;
+  padding-right: 10px;
 }
 body main form input::placeholder {
   color: black;
@@ -471,7 +472,7 @@ body main .restaurant-list .restaurant-list__section a div span {
     margin-left: 0px;
   }
   body main .fonctionnement ol li .chiffre {
-    left: -15px;
+    left: -8px;
   }
   body main .restaurant-list .restaurant-list__section {
     padding-bottom: 15px;
@@ -494,7 +495,7 @@ body main .restaurant-list .restaurant-list__section a div span {
     padding-left: 46px;
   }
   body main .reservation p {
-    font-size: 18PX;
+    font-size: 18px;
     padding-top: 23px;
   }
   body main .reservation button {
@@ -502,13 +503,13 @@ body main .restaurant-list .restaurant-list__section a div span {
   }
   body main .fonctionnement {
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 93%;
     padding-bottom: 42px;
     max-width: 1920px;
   }
   body main .fonctionnement h2 {
     margin-top: 40px;
-    padding-left: 180px;
+    padding-left: 130px;
   }
   body main .fonctionnement ol {
     display: flex;
@@ -530,7 +531,7 @@ body main .restaurant-list .restaurant-list__section a div span {
     padding-bottom: 0px;
   }
   body main .restaurant-list .restaurant-list__section {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
   body main .restaurant-list .restaurant-list__section h2 {
     padding: 5px 0px 0px 180px;
@@ -628,7 +629,7 @@ body .restaurant-menu .menu-list .menu-list__dessert article {
   overflow: hidden;
   cursor: pointer;
   flex-basis: 100%;
-  height: 70PX;
+  height: 70px;
 }
 body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail,
 body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail,
@@ -735,7 +736,7 @@ body .restaurant-menu .menu-list button {
   margin-top: 20px;
   margin-bottom: 40px;
   width: 186px;
-  height: 50Px;
+  height: 50px;
   font-size: 16px;
 }
 
