@@ -1,5 +1,8 @@
 /*Loader*/
 body {
+    .homepage{
+        
+
     .loader {
         $animation-duration: 3s;
         position: fixed;
@@ -9,8 +12,11 @@ body {
         height: 100vh;
         inset: 0px;
         z-index: 1;
-        animation: loader 350ms  $animation-duration forwards;
-       
+        align-items: center;
+        animation: loader 350ms $animation-duration forwards;
+        transform-origin: top;
+    
+
         &::after{
             content: "";
             height: 100px;
@@ -22,7 +28,15 @@ body {
             animation: spin $animation-duration infinite linear;
                 }
 
+    .loader-txt{
+        color: white;
+        font-size: xx-large;
+        align-items: flex-start;
+        z-index: 2;
+        position:absolute;
+    }
             }
+        }
 @keyframes loader {
     to {
         transform: scale(0);
