@@ -9,12 +9,14 @@ body {
         figure {
             flex-basis: 100%;
             height: 275px;
+
             img {
                 width: 100%;
                 object-fit: cover;
                 height: 100%;
             }
         }
+
         .menu-list {
             min-width: 0px;
             flex-basis: 100%;
@@ -26,18 +28,22 @@ body {
             z-index: 1;
             margin-top: -57px;
             justify-content: center;
-            > h1 {
+
+            >h1 {
                 font-family: "Shrikhand", cursive;
                 font-size: 1.7em;
                 display: flex;
                 flex-basis: 100%;
                 justify-content: space-between;
                 padding: 10px 20px 30px 20px;
-                .like{
+
+                .like {
                     position: relative;
-                    top:21px; left: 6px;
+                    top: 21px;
+                    left: 6px;
                 }
             }
+
             .menu-list__entries,
             .menu-list__dishes,
             .menu-list__dessert {
@@ -48,9 +54,11 @@ body {
                 &:nth-of-type(1) {
                     animation-delay: 0.3s;
                 }
+
                 &:nth-of-type(2) {
                     animation-delay: 0.8s;
                 }
+
                 &:nth-of-type(3) {
                     animation-delay: 1.3s;
                 }
@@ -61,11 +69,13 @@ body {
                     width: 100%;
                     padding-bottom: 18px;
                     text-transform: uppercase;
+
                     .menu-list--underline {
                         border-bottom: solid 3px $tertiary-color;
                         padding-bottom: 5px;
                     }
                 }
+
                 article {
                     background-color: white;
                     margin-bottom: 15px;
@@ -81,19 +91,22 @@ body {
                         display: flex;
                         flex-basis: 90%;
                         transition-duration: 1s;
+
                         .menu-list__description {
                             flex-basis: 90%;
                             padding: 10px 0px 10px 10px;
                             white-space: nowrap;
                             overflow: hidden;
                             line-height: 21px;
+
                             h3 {
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 font-size: 18px;
                                 font-weight: 500;
-                               
+
                             }
+
                             p {
                                 overflow: hidden;
                                 text-overflow: ellipsis;
@@ -101,6 +114,7 @@ body {
                                 font-weight: 300;
                             }
                         }
+
                         .menu-list__price {
                             flex-basis: 10%;
                             padding-right: 9px;
@@ -114,7 +128,8 @@ body {
                             font-weight: 500;
                         }
                     }
-                    .menu-list--choice{
+
+                    .menu-list--choice {
                         background-color: $tertiary-color;
                         align-items: center;
                         display: flex;
@@ -123,6 +138,7 @@ body {
                         right: -15%;
                         transition-duration: 1s;
                         width: 10%;
+
                         i {
                             font-size: 25px;
                             color: white;
@@ -134,6 +150,7 @@ body {
                 article:active {
                     .menu-list__detail {
                         flex-basis: 85%;
+
                         .menu-list__description {
                             flex-basis: 90%;
                         }
@@ -143,20 +160,22 @@ body {
                             right: 0%;
                         }
                     }
+
                     .menu-list--choice {
                         width: 15%;
                         right: 0%;
                         min-width: 35px;
-                        
+
                     }
                 }
             }
+
             button {
                 display: flex;
                 justify-content: center;
                 margin-top: 20px;
                 margin-bottom: 40px;
-                width:186px;
+                width: 186px;
                 height: 50Px;
                 font-size: 16px;
             }
@@ -164,12 +183,13 @@ body {
     }
 }
 
-// Responsive
+/*Responsive*/
 @media screen and (min-width: 768px) {
-    body{
-        .restaurant-menu .menu-list{
-            flex-basis: 80%;  
+    body {
+        .restaurant-menu .menu-list {
+            flex-basis: 80%;
         }
+
         .menu-list__entries,
         .menu-list__dishes,
         .menu-list__dessert {
@@ -180,38 +200,44 @@ body {
 
 
 }
+
 @media screen and (min-width: 1024px) {
-    body{
-        .restaurant-menu figure img{
+    body {
+        .restaurant-menu figure img {
             height: 375px;
         }
-       
-        .restaurant-menu .menu-list{
+
+        .restaurant-menu .menu-list {
             flex-basis: 74%;
             margin-top: 70px;
-        h1{
-            justify-content: center;
-            padding: 35px 45px 12px 0px;
-        .like{
-            top: 22px; left: 70px;
-        }
-        }
-        
-       
-        .menu-list__entries,
-        .menu-list__dishes,
-        .menu-list__dessert {
-            width: 60%;
-            padding-left: 19%;
-            padding-top: 2%;
-        }
-        .menu-list__dishes{
-            padding-top: 6px;
-        }
-        .menu-list__dessert{
-            padding-top:5px;
+
+            h1 {
+                justify-content: center;
+                padding: 35px 45px 12px 0px;
+
+                .like {
+                    top: 22px;
+                    left: 70px;
+                }
+            }
+
+
+            .menu-list__entries,
+            .menu-list__dishes,
+            .menu-list__dessert {
+                width: 60%;
+                padding-left: 19%;
+                padding-top: 2%;
+            }
+
+            .menu-list__dishes {
+                padding-top: 6px;
+            }
+
+            .menu-list__dessert {
+                padding-top: 5px;
+            }
         }
     }
-}
-    
+
 }

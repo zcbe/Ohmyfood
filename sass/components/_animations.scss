@@ -1,121 +1,130 @@
 /*Loader*/
 body {
-    .homepage{
-        
+    .homepage {
 
-    .loader {
-        $animation-duration: 3s;
-        position: fixed;
-        display: grid;
-        place-items: center;
-        background-color: $tertiary-color;
-        height: 100vh;
-        inset: 0px;
-        z-index: 1;
-        align-items: center;
-        animation: loader 350ms $animation-duration forwards;
-        transform-origin: top;
-    
 
-        &::after{
-            content: "";
-            height: 100px;
-            width: 100px;
-            border-top:15px solid $primary-color;
-            border-right: 0px solid $tertiary-color;
-            border-bottom: 15px solid $secondary-color;
-            border-radius: 50%;
-            animation: spin $animation-duration infinite linear;
-                }
+        .loader {
+            $animation-duration: 3s;
+            position: fixed;
+            display: grid;
+            place-items: center;
+            background-color: $tertiary-color;
+            height: 100vh;
+            inset: 0px;
+            z-index: 1;
+            align-items: center;
+            animation: loader 350ms $animation-duration forwards;
+            transform-origin: top;
 
-    .loader-txt{
-        color: white;
-        font-size: xx-large;
-        align-items: flex-start;
-        z-index: 2;
-        position:absolute;
-    }
+
+            &::after {
+                content: "";
+                height: 100px;
+                width: 100px;
+                border-top: 15px solid $primary-color;
+                border-right: 0px solid $tertiary-color;
+                border-bottom: 15px solid $secondary-color;
+                border-radius: 50%;
+                animation: spin $animation-duration infinite linear;
+            }
+
+            .loader-txt {
+                color: white;
+                font-size: xx-large;
+                align-items: flex-start;
+                z-index: 2;
+                position: absolute;
             }
         }
+    }
+
+
+    .like {
+
+        i {
+            position: absolute;
+            bottom: 30px;
+            right: 25px;
+            font-size: 25px;
+            cursor: pointer;
+
+
+        }
+
+        .my-heart-full {
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 500ms;
+
+        }
+
+        .my-heart-full:hover {
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient($primary-color, $secondary-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+}   
+
+
 @keyframes loader {
     to {
         transform: scale(0);
-        }       
-                    }
-@keyframes spin{
-    to{
-        transform: rotate(360deg);
-        }
-                }
-            
     }
-
-.like{
-
-    i{
-        position: absolute;
-        bottom: 30px;
-        right: 25px;
-        font-size: 25px;
-        cursor: pointer;
-  
-        
-    }
-
-    .my-heart-full{
-        opacity: 0;
-        transition-property: all;
-        transition-duration: 500ms;
-       
-    }
-    .my-heart-full:hover {
-        opacity: 1;
-        color: transparent;
-        background-image: linear-gradient($primary-color,$secondary-color);
-        background-clip: text;
-        -webkit-background-clip:text;
-    }
-
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes fadeIn {
     0% {
         transform: translateY(-50px);
         opacity: 0;
     }
+
     10% {
         opacity: 0.1;
     }
+
     20% {
         opacity: 0.2;
     }
+
     30% {
         opacity: 0.3;
     }
+
     40% {
         opacity: 0.4;
     }
+
     50% {
         opacity: 0.5;
     }
+
     60% {
         opacity: 0.6;
     }
+
     70% {
         opacity: 0.7;
     }
+
     80% {
         opacity: 0.8;
     }
+
     90% {
         opacity: 0.9;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
-
-
-

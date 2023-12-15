@@ -108,7 +108,8 @@ footer ul li span {
     align-items: center;
     height: 114px;
   }
-  footer h2, footer ul {
+  footer h2,
+  footer ul {
     display: flex;
     padding-left: 5%;
     font-size: 17px;
@@ -117,13 +118,18 @@ footer ul li span {
     margin-bottom: 0px;
     justify-content: flex-end;
   }
-  footer h2 h2, footer ul h2 {
+  footer h2 h2,
+  footer ul h2 {
     width: 10%;
   }
-  footer h2 ul, footer ul ul {
+  footer h2 ul,
+  footer ul ul {
     width: 50%;
   }
-  footer h2 li, footer h2 a, footer ul li, footer ul a {
+  footer h2 li,
+  footer h2 a,
+  footer ul li,
+  footer ul a {
     padding-left: 15px;
     white-space: nowrap;
   }
@@ -158,6 +164,26 @@ body .homepage .loader .loader-txt {
   z-index: 2;
   position: absolute;
 }
+body .like i {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  font-size: 25px;
+  cursor: pointer;
+}
+body .like .my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+body .like .my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 @keyframes loader {
   to {
     transform: scale(0);
@@ -168,27 +194,6 @@ body .homepage .loader .loader-txt {
     transform: rotate(360deg);
   }
 }
-
-.like i {
-  position: absolute;
-  bottom: 30px;
-  right: 25px;
-  font-size: 25px;
-  cursor: pointer;
-}
-.like .my-heart-full {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 500ms;
-}
-.like .my-heart-full:hover {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
 @keyframes fadeIn {
   0% {
     transform: translateY(-50px);
@@ -734,6 +739,7 @@ body .restaurant-menu .menu-list button {
   font-size: 16px;
 }
 
+/*Responsive*/
 @media screen and (min-width: 768px) {
   body .restaurant-menu .menu-list {
     flex-basis: 80%;

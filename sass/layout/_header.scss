@@ -1,23 +1,26 @@
 // header commun
-header{
+header {
     display: flex;
     align-items: center;
     height: 65px;
-    a{
+
+    a {
         color: black;
     }
-    i{
+
+    i {
         padding-left: 22px;
         font-size: 20px;
         align-items: flex-start;
     }
-    h1{
+
+    h1 {
         font-family: 'Shrikhand', cursive;
         text-align: center;
         font-size: 30px;
     }
 
-    img{
+    img {
         height: 30px;
         width: 170px;
         padding-right: 31px;
@@ -29,12 +32,12 @@ header{
 }
 
 // header home 
-.home-header{
+.home-header {
     padding: 30px 10px 15px 10px;
     display: flex;
     justify-content: center;
     height: 20px;
-    
+
     img {
         height: 30px;
         cursor: pointer;
@@ -46,28 +49,31 @@ header{
 
 // Responsive 
 @media screen and (min-width: 1024px) {
-    
-    .home-header{
+
+    .home-header {
         height: 50px;
         padding: 23px 10px 25px 10PX;
-        img{
+
+        img {
             width: 200px;
             height: 35px;
         }
     }
-     
-    .menu-header{
+
+    .menu-header {
         padding: 30px 10px 0px 10px;
-        i{
+
+        i {
             padding-bottom: 26px;
             padding-left: 16px;
         }
-        img{
+
+        img {
             width: 200px;
             padding-right: 30px;
-            padding-bottom:30px ;       }
-        
+            padding-bottom: 30px;
+        }
+
     }
 
 }
-
