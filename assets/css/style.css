@@ -145,7 +145,7 @@ body .homepage .loader {
   inset: 0px;
   z-index: 1;
   align-items: center;
-  animation: loader 350ms 3s forwards;
+  animation: loader 350ms 2s forwards;
   transform-origin: top;
 }
 body .homepage .loader::after {
@@ -156,7 +156,7 @@ body .homepage .loader::after {
   border-right: 0px solid #99E2D0;
   border-bottom: 15px solid #FF79DA;
   border-radius: 50%;
-  animation: spin 3s infinite linear;
+  animation: spin 2s infinite linear;
 }
 body .homepage .loader .loader-txt {
   color: white;
@@ -542,7 +542,7 @@ body main .restaurant-list .restaurant-list__section a div span {
   }
 }
 body .container {
-  min-width: 375px;
+  min-width: 200px;
 }
 body .restaurant-menu {
   display: flex;
@@ -575,11 +575,12 @@ body .restaurant-menu .menu-list > h1 {
   flex-basis: 100%;
   justify-content: space-between;
   padding: 10px 20px 30px 20px;
+  width: 76%;
 }
 body .restaurant-menu .menu-list > h1 .like {
   position: relative;
-  top: 21px;
-  left: 6px;
+  top: 22px;
+  left: 19%;
 }
 body .restaurant-menu .menu-list .menu-list__entries,
 body .restaurant-menu .menu-list .menu-list__dishes,
@@ -637,6 +638,7 @@ body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail 
   display: flex;
   flex-basis: 90%;
   transition-duration: 1s;
+  min-width: 0px;
 }
 body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__description,
 body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description,
@@ -660,7 +662,7 @@ body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .
 body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description p {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9em;
+  font-size: 18px;
   font-weight: 300;
 }
 body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail .menu-list__price,
@@ -762,7 +764,7 @@ body .restaurant-menu .menu-list button {
   }
   body .restaurant-menu .menu-list h1 {
     justify-content: center;
-    padding: 35px 45px 12px 0px;
+    padding: 32px 45px 12px 85px;
   }
   body .restaurant-menu .menu-list h1 .like {
     top: 22px;

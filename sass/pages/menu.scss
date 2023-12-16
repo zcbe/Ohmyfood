@@ -1,6 +1,6 @@
 body {
     .container {
-        min-width: 375px;
+        min-width: 200px;
     }
 
     .restaurant-menu {
@@ -36,11 +36,12 @@ body {
                 flex-basis: 100%;
                 justify-content: space-between;
                 padding: 10px 20px 30px 20px;
+                width: 76%;
 
                 .like {
                     position: relative;
-                    top: 21px;
-                    left: 6px;
+                    top: 22px;
+                    left: 19%;
                 }
             }
 
@@ -91,7 +92,7 @@ body {
                         display: flex;
                         flex-basis: 90%;
                         transition-duration: 1s;
-
+                        min-width: 0px;
                         .menu-list__description {
                             flex-basis: 90%;
                             padding: 10px 0px 10px 10px;
@@ -110,7 +111,7 @@ body {
                             p {
                                 overflow: hidden;
                                 text-overflow: ellipsis;
-                                font-size: 0.9em;
+                                font-size: 18px;
                                 font-weight: 300;
                             }
                         }
@@ -213,7 +214,7 @@ body {
 
             h1 {
                 justify-content: center;
-                padding: 35px 45px 12px 0px;
+                padding: 32px 45px 12px 85px;
 
                 .like {
                     top: 22px;
